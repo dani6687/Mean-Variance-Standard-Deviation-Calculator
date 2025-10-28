@@ -18,12 +18,13 @@ def calculate(list):
          func(array).tolist()]
 
 # Calculate the mean, variance, standard deviation, max, min and sum
-    calculations = {'mean': calc_state(np.mean, matrix),
-              'variance': calc_state(np.var, matrix),
-              'standard deviation': calc_state(np.std, matrix),
-              'max': calc_state(np.max, matrix),
-              'min': calc_state(np.min, matrix),
-              'sum': calc_state(np.sum, matrix),
-              }
+    calculations = {
+        'mean': calc_state(np.mean, matrix),
+        'variance': calc_state(np.var, matrix),
+        'standard deviation': calc_state(np.std, matrix),
+        'max': calc_state(np.max, matrix),
+        'min': calc_state(np.min, matrix),
+        'sum': calc_state(np.sum, matrix),
+        }
     
     return calculations
